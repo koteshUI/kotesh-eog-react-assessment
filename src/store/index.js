@@ -8,7 +8,7 @@ import metricsReducer from "./reducers/metricsReducer";
 export default () => {
   const rootReducer = combineReducers({
     weather: weatherReducer,
-    metrics: metricsReducer,
+    metrics: metricsReducer
   });
 
   const composeEnhancers = composeWithDevTools({});

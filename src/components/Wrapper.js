@@ -11,5 +11,5 @@ const useStyles = makeStyles(theme => ({
 
 export default ({ children }) => {
   const classes = useStyles();
-  return <div className={classes.wrapper} >{children}</div>;
+  return <div className={classes.wrapper}>{children}</div>;
 };

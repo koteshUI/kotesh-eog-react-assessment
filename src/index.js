@@ -3,7 +3,10 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
-ReactDOM.render(<App style={{ background: "#0f273d" }} />, document.getElementById("root"));
+ReactDOM.render(
+  <App style={{ background: "#0f273d" }} />,
+  document.getElementById("root")
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

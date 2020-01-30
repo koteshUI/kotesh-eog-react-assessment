@@ -1,20 +1,20 @@
-import React from 'react'
-import { connect } from 'react-redux'
+import React from "react";
+import { connect } from "react-redux";
 
-import MetricCard from './metricComponents/MetricCard'
+import MetricCard from "./metricComponents/MetricCard";
 
 const CardSection = ({ selectedMetrics, latestValue }) => {
-    return (
-        <React.Fragment>
-            {selectedMetrics.map((s, key) => (
-                <MetricCard key={key} currentValue={latestValue[s]} title={s} />
-            ))}
-        </React.Fragment>
-    )
-}
+  return (
+    <React.Fragment>
+      {selectedMetrics.map((s, key) => (
+        <MetricCard key={key} currentValue={latestValue[s]} title={s} />
+      ))}
+    </React.Fragment>
+  );
+};
 
 const mapStateToProps = ({ metrics: { latestValue } }) => ({
-    latestValue,
-})
+  latestValue
+});
 
-export default connect(mapStateToProps)(CardSection)
+export default connect(mapStateToProps)(CardSection);
