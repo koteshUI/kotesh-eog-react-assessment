@@ -3,8 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({
   wrapper: {
-    backgroundImage: "linear-gradient(#2a3265, #1e234d)",
-    color: "#fff",
+    backgroundImage: "linear-gradient(#1e234d)",
+    color: "#000",
     height: "100vh"
   }
 }));
